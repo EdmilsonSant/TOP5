@@ -6,12 +6,9 @@ function busca(){
     
 
     $.ajax({
-        
         async: true,
         url: "https://api-java-top.herokuapp.com/top",
-        cache: false,
-        method: 'GET',
-        dataType: 'json',
+        method: 'POST',
         success:function(response){
             console.log("testando");
             console.log(response);
